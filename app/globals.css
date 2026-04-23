@@ -127,4 +127,24 @@
   html {
     @apply font-sans;
   }
+  /* Gradient animated background */
+body {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6, #9333ea);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass effect */
+.glass {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+}
 }
